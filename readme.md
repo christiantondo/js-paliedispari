@@ -23,9 +23,10 @@
 - Chiedere all’utente di inserire una parola.
 
 <h3>Elaborazione e output<h3>
+
 - Creare una funzione per capire se la parola inserita è palindroma.
 
-# Domande da  farsi quando si crea una funzione
+# Domande da farsi quando si crea una funzione
 
 - Come dovrebbe chiamarsi?
 - Ho bisogno di parametri?
