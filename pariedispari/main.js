@@ -20,6 +20,7 @@ console.log("L'utente ha inserito un input valido:", paridispariUtente);
 let numeroUtente = prompt("Scegli un numero da 1 a 5");
 
 // Faccio un controllo sull'input dell'utente, se non valido scelgo un numero a caso per lui
+// Dovrebbe essere aggiunto un ulteriore passaggio per controllare se l'input inserito dall'utente sia un NaN
 if (numeroUtente < 1 || numeroUtente > 5) {
 
     numeroUtente = Math.floor(Math.random() * 6) + 1;
