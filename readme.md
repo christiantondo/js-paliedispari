@@ -16,7 +16,7 @@
 
 
 
-# Ex 2: Palidroma
+# Ex 2: Palindroma
 
 <h3>Input<h3>
 
