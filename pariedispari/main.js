@@ -1,10 +1,9 @@
 console.log("JS ok")
 
-// Bozza funzione numero casuale
+// Funzione numero casuale
 function numeroCasuale() {
     return Math.floor(Math.random() * 5) + 1;
 }
-// Da implementare nel codice scritto in precedenza
 
 // L'utente sceglie pari o dispari
 let paridispariUtente = prompt("Scegli pari o dispari");
@@ -38,3 +37,4 @@ if (numeroUtente < 1 || numeroUtente > 5) {
 alert(`Hai scelto ${numeroUtente}`);
 console.log("L'utente ha inserito un input valido:", numeroUtente);
 
+// Da scrivere ancora la scelta del computer
