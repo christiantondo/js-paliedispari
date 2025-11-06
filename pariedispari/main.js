@@ -1,5 +1,11 @@
 console.log("JS ok")
 
+// Bozza funzione numero casuale
+function numeroCasuale() {
+    return Math.floor(Math.random() * 5) + 1;
+}
+// Da implementare nel codice scritto in precedenza
+
 // L'utente sceglie pari o dispari
 let paridispariUtente = prompt("Scegli pari o dispari");
 
@@ -23,7 +29,7 @@ let numeroUtente = prompt("Scegli un numero da 1 a 5");
 // Dovrebbe essere aggiunto un ulteriore passaggio per controllare se l'input inserito dall'utente sia un NaN
 if (numeroUtente < 1 || numeroUtente > 5) {
 
-    numeroUtente = Math.floor(Math.random() * 6) + 1;
+    numeroUtente = Math.floor(Math.random() * 5) + 1;
     alert(`Dovevi scegliere un numero compreso tra 1 e 5, sceglierò ${numeroUtente} per te`);
     console.log(`L'utente ha inserito un numero non valido, scelgo ${numeroUtente} per lui`);
 
@@ -31,3 +37,4 @@ if (numeroUtente < 1 || numeroUtente > 5) {
 // Mostriamo la scelta all'utente
 alert(`Hai scelto ${numeroUtente}`);
 console.log("L'utente ha inserito un input valido:", numeroUtente);
+
