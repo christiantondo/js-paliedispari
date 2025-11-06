@@ -29,7 +29,7 @@ let numeroUtente = prompt("Scegli un numero da 1 a 5");
 // Dovrebbe essere aggiunto un ulteriore passaggio per controllare se l'input inserito dall'utente sia un NaN
 if (numeroUtente < 1 || numeroUtente > 5) {
 
-    numeroUtente = Math.floor(Math.random() * 5) + 1;
+    numeroUtente = numeroCasuale();
     alert(`Dovevi scegliere un numero compreso tra 1 e 5, sceglierò ${numeroUtente} per te`);
     console.log(`L'utente ha inserito un numero non valido, scelgo ${numeroUtente} per lui`);
 
