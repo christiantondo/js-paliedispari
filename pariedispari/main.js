@@ -40,21 +40,21 @@ if (paridispariUtente !== "pari" && paridispariUtente !== "dispari") {
 // Mostriamo la scelta all'utente
 alert(`Hai scelto ${paridispariUtente}`);
 console.log("L'utente ha inserito un input valido:", paridispariUtente);
-console.log(`Il computer ha scelto ${paridispariComputer}`)
-
+console.log(`Il computer ha scelto ${paridispariComputer}`);
 
 // L'utente sceglie un numero da 1 a 5
 let numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5"));
 
 // Faccio un controllo sull'input dell'utente, se non valido scelgo un numero a caso per lui
 // Dovrebbe essere aggiunto un ulteriore passaggio per controllare se l'input inserito dall'utente sia un NaN
-if (numeroUtente < 1 || numeroUtente > 5) {
+if (isNaN(numeroUtente) || numeroUtente < 1 || numeroUtente > 5) {
 
     numeroUtente = numeroCasuale();
     alert(`Dovevi scegliere un numero compreso tra 1 e 5, sceglierò ${numeroUtente} per te`);
     console.log(`L'utente ha inserito un numero non valido, scelgo ${numeroUtente} per lui`);
-
 }
+
+
 // Mostriamo la scelta all'utente
 alert(`Hai scelto ${numeroUtente}`);
 console.log("L'utente ha inserito un input valido:", numeroUtente);
