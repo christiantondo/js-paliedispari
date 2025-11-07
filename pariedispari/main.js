@@ -1,12 +1,17 @@
 console.log("JS ok")
 
+// FUNZIONI 
+
 // Funzione numero casuale
 function numeroCasuale() {
     return Math.floor(Math.random() * 5) + 1;
 }
 
+// PROGRAMMA
+
 // L'utente sceglie pari o dispari
 let paridispariUtente = prompt("Scegli pari o dispari");
+let paridispariComputer = "";
 
 // Faccio un controllo sull'input dell'utente, se non valido scelgo pari per lui
 if (paridispariUtente !== "pari" && paridispariUtente !== "dispari") {
@@ -15,10 +20,19 @@ if (paridispariUtente !== "pari" && paridispariUtente !== "dispari") {
     alert("Dovevi scegliere tra pari o dispari, sceglierò pari per te");
     console.log("L'utente ha inserito un input non valido, scelgo pari per lui");
 
-} 
+} if (paridispariUtente === ("pari")) {
+
+    paridispariComputer = "dispari";
+
+} if (paridispariUtente === ("dispari")) {
+    
+    paridispariComputer = "pari";
+}
+
 // Mostriamo la scelta all'utente
 alert(`Hai scelto ${paridispariUtente}`);
 console.log("L'utente ha inserito un input valido:", paridispariUtente);
+console.log(`Il computer ha scelto ${paridispariComputer}`)
 
 
 // L'utente sceglie un numero da 1 a 5
@@ -38,3 +52,5 @@ alert(`Hai scelto ${numeroUtente}`);
 console.log("L'utente ha inserito un input valido:", numeroUtente);
 
 // Da scrivere ancora la scelta del computer
+
+// Il computer sceglie l'opposto 
