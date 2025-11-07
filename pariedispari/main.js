@@ -9,7 +9,7 @@ function numeroCasuale() {
 
 // Funzione somma = pari/dispari
 function isOdd(numero) {
-    return (numero % 2 != 0);
+    return (numero % 2 !== 0)
 }
 
 
@@ -26,12 +26,12 @@ if (paridispariUtente !== "pari" && paridispariUtente !== "dispari") {
     alert("Dovevi scegliere tra pari o dispari, sceglierò pari per te");
     console.log("L'utente ha inserito un input non valido, scelgo pari per lui");
 
-} if (paridispariUtente === ("pari")) {
+} if (paridispariUtente == ("pari")) {
 
     paridispariComputer = "dispari";
 
-} if (paridispariUtente === ("dispari")) {
-    
+} if (paridispariUtente == ("dispari")) {
+
     paridispariComputer = "pari";
 }
 
@@ -63,6 +63,20 @@ console.log("L'utente ha inserito un input valido:", numeroUtente);
 let numeroComputer = numeroCasuale();
 console.log("Il computer sceglie un numero casuale:", numeroComputer)
 
+// Grazie alla funzione isOdd sono in grado di capire se il numero sia pari o dispari, quindi la invoco
 let risultato = isOdd(numeroUtente + numeroComputer);
+let risultatoUtente = "";
 
+if (risultato == true) {
+    risultatoUtente = "dispari";
+} else {
+    risultatoUtente = "pari";
+}
+
+// Decreto un vincitore
+if (paridispariUtente == risultatoUtente) {
+    console.log("Hai vinto")
+} else {
+    console.log("Hai perso")
+}
 
