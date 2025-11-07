@@ -7,6 +7,12 @@ function numeroCasuale() {
     return Math.floor(Math.random() * 5) + 1;
 }
 
+// Funzione somma = pari/dispari
+function isOdd(numero) {
+    return (numero % 2 != 0);
+}
+
+
 // PROGRAMMA
 
 // L'utente sceglie pari o dispari
@@ -28,6 +34,8 @@ if (paridispariUtente !== "pari" && paridispariUtente !== "dispari") {
     
     paridispariComputer = "pari";
 }
+
+// Il computer sceglie l'opposto della scelta dell'utente
 
 // Mostriamo la scelta all'utente
 alert(`Hai scelto ${paridispariUtente}`);
@@ -51,6 +59,10 @@ if (numeroUtente < 1 || numeroUtente > 5) {
 alert(`Hai scelto ${numeroUtente}`);
 console.log("L'utente ha inserito un input valido:", numeroUtente);
 
-// Da scrivere ancora la scelta del computer
+// Il computer genera un numero casuale
+let numeroComputer = numeroCasuale();
+console.log("Il computer sceglie un numero casuale:", numeroComputer)
 
-// Il computer sceglie l'opposto 
+let risultato = isOdd(numeroUtente + numeroComputer);
+
+
